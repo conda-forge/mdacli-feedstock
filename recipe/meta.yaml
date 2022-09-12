@@ -1,5 +1,5 @@
 {% set name = "mdacli" %}
-{% set version = "0.1.12" %}
+{% set version = "0.1.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,18 +7,18 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a26ec097677937b66aab3330b17a6360aa96b6760295ae44792639158c35175d
+  sha256: dfbbb5ed1bf67d3d85737ee207d30f8aa31f4bfd59159f21fc7b89b6d8069d47
 
 build:
   number: 1
   skip: true  # [py<39]
   skip: true  # [py>39]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-     - pip
-     - python
+    - pip
+    - python
   run:
     - python
     - MDAnalysis >=2.0.0
@@ -31,7 +31,7 @@ about:
   home: https://github.com/MDAnalysis/mdacli
   license: GPL-2.0-or-later
   license_file: LICENSE
-  summary: 'Command line interface for MDAnalysis'
+  summary: Command line interface for MDAnalysis
   description: |
     mdacli is a simple command line interface (CLI) to the analysis
     classes of MDAnalysis using argparse.
