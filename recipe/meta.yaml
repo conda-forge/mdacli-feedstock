@@ -11,8 +11,8 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<39]
-  skip: true  # [py>39]
+  skip: true  # [py>310]
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
