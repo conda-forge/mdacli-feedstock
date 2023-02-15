@@ -1,5 +1,5 @@
 {% set name = "mdacli" %}
-{% set version = "0.1.19" %}
+{% set version = "0.1.24" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 14d8df40b0b2046707f834a4b2a5eb45f2c7527b1e17084d6f566252929a6944
+  sha256: 1d2a869893d63179abb88b94488a232d522741baa98c8344953ab6d4066ea856
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
