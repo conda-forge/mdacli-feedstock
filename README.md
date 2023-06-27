@@ -1,11 +1,11 @@
-About mdacli
-============
+About mdacli-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdacli-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/MDAnalysis/mdacli
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdacli-feedstock/blob/main/LICENSE.txt)
 
 Summary: Command line interface for MDAnalysis
 
