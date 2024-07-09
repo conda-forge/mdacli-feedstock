@@ -249,6 +249,3 @@ Feedstock Maintainers
 
 * [@PicoCentauri](https://github.com/PicoCentauri/)
 
-
-<!-- dummy commit to enable rerendering -->
-
