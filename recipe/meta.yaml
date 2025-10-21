@@ -1,5 +1,6 @@
 {% set name = "mdacli" %}
-{% set version = "0.1.32" %}
+{% set version = "0.1.33" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,24 +8,24 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mdacli-{{ version }}.tar.gz
-  sha256: f4c4fc8664d6a4abbb90751bfc500adaec6d0c29b0f83e174c379b457d426f37
+  sha256: 3fe8e5e0abf594a5992c1682d3a19b3fea6b5cbf79037c11cb0528a2ea1f930c
 
 build:
   entry_points:
     - mda = mdacli.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=43.0.0
+    - setuptools >=77
     - wheel
     - pip
   run:
     - python >={{ python_min }}
-    - mdanalysis >=2.1.0
+    - mdanalysis >=2.10.0
     - threadpoolctl
 
 test:
