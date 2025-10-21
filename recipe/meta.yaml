@@ -1,5 +1,6 @@
 {% set name = "mdacli" %}
 {% set version = "0.1.33" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -19,12 +20,12 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=43.0.0
+    - setuptools >=77
     - wheel
     - pip
   run:
     - python >={{ python_min }}
-    - mdanalysis >=2.1.0
+    - mdanalysis >=2.10.0
     - threadpoolctl
 
 test:
