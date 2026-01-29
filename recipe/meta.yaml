@@ -1,5 +1,5 @@
 {% set name = "mdacli" %}
-{% set version = "0.1.34" %}
+{% set version = "0.2.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mdacli-{{ version }}.tar.gz
-  sha256: 325552acb9e77d9ab665854bb111ddd0ae629f156621f201cef11131b0a689f6
+  sha256: 40c29dd303d4bea4295805d2556ad769a25afad83c2573975f4ed6d1938825e1
 
 build:
   entry_points:
