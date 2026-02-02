@@ -22,7 +22,6 @@ requirements:
     - python {{ python_min }}
     - setuptools >=77
     - setuptools_scm >=8
-    - griddataformats==1.1.0=pyhd8ed1ab_1
     - wheel
     - pip
   run:
