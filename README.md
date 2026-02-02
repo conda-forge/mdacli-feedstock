@@ -152,4 +152,5 @@ Feedstock Maintainers
 =====================
 
 * [@PicoCentauri](https://github.com/PicoCentauri/)
+* [@hejamu](https://github.com/hejamu/)
 
