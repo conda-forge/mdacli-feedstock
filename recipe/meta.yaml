@@ -21,6 +21,7 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools >=77
+    - setuptools_scm >=8
     - wheel
     - pip
   run:
@@ -53,3 +54,4 @@ about:
 extra:
   recipe-maintainers:
     - PicoCentauri
+    - hejamu
